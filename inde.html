@@ -13,64 +13,507 @@
      Nos siga em nossa rede social:  https://www.instagram.com/vm_software/                                                                                                                               
                                                                                                                                    
 -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/logo01.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css">
-    <title>Empório Alvorada</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Empório Alvorada</title>
+
+<link rel="icon" href="assets/logo01.jpg">
+
+<meta property="og:title" content="Empório Alvorada">
+<meta property="og:description" content="Qualidade, variedade e atendimento de confiança para sua família.">
+<meta property="og:image" content="assets/logo.jpg">
+<meta property="og:type" content="website">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+</style>
+
 </head>
-<body>
-    <header class="headerHome">
-        <img id="Logo" src="assets/logo.jpg" alt="logo da empresa">
-        <nav class="menu">
-            <a>Sobre</a>
-            <a>Contato</a>
-            <a>Horario de Funcionamento</a>
-            <a> Produtos</a>
-        </nav>
-    </header>
-    <main class="main">
-        <img src="assets/banner.png" alt="banner">
-    </main>
-    <section class="about">
-        <div class="aboutImage">
-            <img class="familiaMercado" src="assets/familia.webp" alt="familianomercado">
-        </div>
-        <div class="aboutText">
-            <h1 class="aboutTitle">Empório Alvorada</h1>
-            <p class="aboutParagrafo">
-                O Empório Alvorada é o lugar ideal para você fazer suas compras com sua família. Aqui, cada detalhe é pensado para oferecer qualidade, variedade e um atendimento próximo, transparente e acolhedor.
 
-                Nosso compromisso é garantir produtos selecionados, ambiente agradável e a confiança que você procura para levar o melhor para a sua casa.
+<body class="bg-gray-50 font-sans">
 
-                Venha conhecer o Empório Alvorada e descubra uma experiência de compra feita para você e sua família.
-            </p>
-            <button class="btnContatoAbout">Contato</button>
-        </div>
-    </section>
-    <section class="delivary">
-        <div class="deliveryText">
-            <h1 class="titleDelivery">
-                Delivery Empório Alvorada
-            </h1>
-            <p class="textoDelivery">
-                O delivery do Empório Alvorada foi pensado para levar mais praticidade e comodidade até você. Faça suas compras sem sair de casa e receba produtos frescos e selecionados com a qualidade que você já conhece.
 
-                Cuidamos de cada pedido para que tudo chegue até sua casa com agilidade, segurança e o mesmo cuidado que temos em nossa loja.
-            </p>
-            <button id="btnDelivery">Contato</button>
-        </div>
-        <div class="imageDelivary">
-            <img class="motoca" src="assets/delivery.webp" alt="motocadaloja">
-        </div>
-    </section>
-    <section class="credCard">
-        <img class="imgCredCard" src="assets/cartao.webp" alt="credCard">
-    </section>
-    
+<!-- HEADER -->
+
+<header class="bg-[#0864b1] text-white shadow-lg">
+
+<div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+<img src="assets/logo.jpg" class="w-14">
+
+<nav class="hidden md:flex gap-8 font-semibold">
+
+<a href="#sobre">Sobre</a>
+<a href="#delivery">Delivery</a>
+<a href="#depoimentos">Depoimentos</a>
+<a href="#contato">Contato</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="relative">
+
+<img src="assets/banner.jpg" class="w-full h-[520px] object-cover">
+
+<div class="absolute inset-0 bg-black/40 flex items-center">
+
+<div class="max-w-7xl mx-auto text-white px-6">
+
+<h1 class="text-5xl font-bold mb-6">
+
+Qualidade e confiança para sua família
+
+</h1>
+
+<p class="mb-6 text-lg">
+
+O Empório Alvorada oferece produtos selecionados, atendimento de qualidade e entrega rápida.
+
+</p>
+
+<a href="#contato" class="bg-[#0864b1] px-8 py-3 rounded-lg font-semibold">
+
+Falar no WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- SOBRE -->
+
+<section id="sobre" class="max-w-7xl mx-auto py-20 px-6 grid md:grid-cols-2 gap-12 items-center fade">
+
+<div class="flex justify-center">
+<img src="assets/familia.webp" class="rounded-xl max-h-[420px] shadow-xl">
+</div>
+
+<div>
+
+<h2 class="text-4xl font-bold mb-4">
+
+Empório Alvorada
+
+</h2>
+
+<p class="text-gray-600 leading-relaxed">
+
+Aqui cada detalhe é pensado para oferecer qualidade, variedade e confiança para você e sua família.
+
+Selecionamos os melhores produtos e oferecemos um ambiente acolhedor para tornar sua experiência de compra ainda melhor.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- SERVIÇOS -->
+
+<section class="bg-white py-20">
+
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-center">
+
+<div class="p-6 shadow-lg rounded-xl fade">
+
+<h3 class="text-xl font-bold mb-3">
+
+🚚 Delivery Rápido
+
+</h3>
+
+<p class="text-gray-600">
+
+Receba suas compras no conforto da sua casa.
+
+</p>
+
+</div>
+
+<div class="p-6 shadow-lg rounded-xl fade">
+
+<h3 class="text-xl font-bold mb-3">
+
+🥩 Produtos Selecionados
+
+</h3>
+
+<p class="text-gray-600">
+
+Qualidade e frescor em todos os produtos.
+
+</p>
+
+</div>
+
+<div class="p-6 shadow-lg rounded-xl fade">
+
+<h3 class="text-xl font-bold mb-3">
+
+🤝 Atendimento de Qualidade
+
+</h3>
+
+<p class="text-gray-600">
+
+Nossa equipe está pronta para atender você.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- DELIVERY -->
+
+<section id="delivery" class="bg-[#0864b1] text-white py-20">
+
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6 fade">
+
+<div>
+
+<h2 class="text-4xl font-bold mb-4">
+
+Delivery Empório Alvorada
+
+</h2>
+
+<p class="mb-6">
+
+Comodidade, rapidez e segurança para suas compras.
+
+</p>
+
+<a href="#" class="bg-white text-[#0864b1] px-8 py-3 rounded-lg font-bold">
+
+Pedir agora
+
+</a>
+
+</div>
+
+<img src="assets/delivery.webp" class="rounded-xl shadow-xl">
+
+</div>
+
+</section>
+
+
+
+<!-- CARTÕES -->
+
+<section class="max-w-6xl mx-auto py-20 px-6 fade">
+
+<img src="assets/cartao.webp" class="rounded-xl shadow-lg">
+
+</section>
+
+
+
+<!-- DEPOIMENTOS -->
+
+<section id="depoimentos" class="bg-gray-100 py-20">
+
+<div class="max-w-7xl mx-auto px-6 text-center">
+
+<h2 class="text-4xl font-bold mb-12">
+
+Clientes satisfeitos
+
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-white p-6 rounded-xl shadow fade">
+
+<img src="https://i.pravatar.cc/80?img=5" class="rounded-full mb-4 mx-auto">
+
+<div class="text-yellow-400 mb-2">★★★★★</div>
+
+<p class="text-gray-600">
+
+"Mercado sempre organizado e com produtos frescos."
+
+</p>
+
+</div>
+
+<div class="bg-white p-6 rounded-xl shadow fade">
+
+<img src="https://i.pravatar.cc/80?img=12" class="rounded-full mb-4 mx-auto">
+
+<div class="text-yellow-400 mb-2">★★★★★</div>
+
+<p class="text-gray-600">
+
+"Delivery rápido e atendimento excelente."
+
+</p>
+
+</div>
+
+<div class="bg-white p-6 rounded-xl shadow fade">
+
+<img src="https://i.pravatar.cc/80?img=20" class="rounded-full mb-4 mx-auto">
+
+<div class="text-yellow-400 mb-2">★★★★★</div>
+
+<p class="text-gray-600">
+
+"Melhor mercado da região."
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTATO -->
+
+<section id="contato" class="py-20">
+
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+
+<div>
+
+<h2 class="text-3xl font-bold mb-6">
+
+Entre em Contato
+
+</h2>
+
+<div class="flex flex-col gap-4">
+
+<a href="#" class="bg-green-500 text-white py-3 rounded-lg text-center font-semibold">
+
+WhatsApp
+
+</a>
+
+<a href="#" class="bg-blue-500 text-white py-3 rounded-lg text-center font-semibold">
+
+Ligar
+
+</a>
+
+<a href="#" class="bg-pink-500 text-white py-3 rounded-lg text-center font-semibold">
+
+Instagram
+
+</a>
+
+</div>
+
+</div>
+
+<div>
+
+<h2 class="text-3xl font-bold mb-6">
+
+Horário de Funcionamento
+
+</h2>
+
+<div class="bg-white shadow-lg p-6 rounded-xl">
+
+<p> <p class="fas fa-clock text-primary"></p><strong>Segunda a Sexta</strong> — 07:00 às 20:00</p>
+<p><strong>Sábado</strong> — 07:00 às 18:00</p>
+<p><strong>Domingo</strong> — 08:00 às 14:00</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- MAPA -->
+
+<div class="max-w-7xl mx-auto px-6 pb-20">
+
+<iframe
+class="w-full h-[350px] rounded-xl shadow-lg"
+src="https://www.google.com/maps?q=mercado&output=embed">
+</iframe>
+
+</div>
+
+
+
+   <!-- Footer -->
+
+<footer class="bg-[#0864b1] text-white py-8">
+
+<div class="max-w-7xl mx-auto px-4">
+
+<div class="flex flex-col md:flex-row justify-between items-center">
+
+<!-- Logo + Nome -->
+
+<div class="mb-4 md:mb-0">
+
+<div class="flex items-center gap-3">
+
+<img class="w-12" src="assets/logo.jpg" alt="logo Empório Alvorada"/>
+
+<h2 class="text-xl font-bold">Empório Alvorada</h2>
+
+</div>
+
+<p class="text-gray-400 mt-1">
+Todos os direitos reservados © 2026
+</p>
+
+</div>
+
+
+<!-- Redes sociais -->
+
+<div class="flex items-center gap-4">
+
+<a href="https://instagram.com" class="text-white hover:text-pink-400 transition">
+
+<i class="fab fa-instagram text-2xl"></i>
+
+</a>
+
+<a href="https://api.whatsapp.com/send/?phone=5511999999999" class="text-white hover:text-green-400 transition">
+
+<i class="fab fa-whatsapp text-2xl"></i>
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="mt-8 pt-6 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+
+
+<!-- Site seguro -->
+
+<div class="flex items-center gap-2 mb-4 md:mb-0">
+
+<i class="fas fa-lock text-blue-400"></i>
+
+<span>Site Seguro</span>
+
+</div>
+
+
+<!-- Desenvolvedor -->
+
+<div class="flex items-center gap-2 mb-4 md:mb-0">
+
+<span>
+Desenvolvido por 
+<a href="https://vmsoftware.netlify.app/" class="text-blue-400 hover:underline">
+VmSoftware
+</a>
+</span>
+
+<a href="https://vmsoftware.netlify.app/">
+
+<img class="w-10" src="https://vmsoftware.netlify.app/TAG%20GM.png" alt="developer">
+
+</a>
+
+</div>
+
+
+<!-- frase -->
+
+<div class="text-center md:text-right">
+
+<p class="text-gray-400">
+Desenvolvido com ❤️ para quem valoriza qualidade
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+<!-- BOTÃO WHATSAPP -->
+
+<a href="#" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-xl">
+
+💬
+
+</a>
+
+
+
+<script>
+
+const observer = new IntersectionObserver(entries => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show")
+
+}
+
+})
+
+})
+
+document.querySelectorAll(".fade").forEach(el => observer.observe(el))
+
+</script>
+
 </body>
 </html>
